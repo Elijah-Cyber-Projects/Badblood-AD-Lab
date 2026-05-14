@@ -80,10 +80,10 @@ Deployed an intentionally vulnerable Active Directory environment using BadBlood
 <details>
 <summary>📸 Environment Screenshots</summary>
 <br>
-<img src="screenshots/vm-overview.png" width="80%"/>
-<img src="screenshots/nsg-rules.png" width="80%"/>
-<img src="screenshots/badblood-output.png" width="80%"/>
-<img src="screenshots/ad-populated.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/502cec22-de2c-41fb-a0f0-1192e4cfa4d6" width="80%"/>
+<img src="https://github.com/user-attachments/assets/3f9ccce0-5c38-43a2-9e14-c7daf5537128" width="80%"/>
+<img src="https://github.com/user-attachments/assets/671a78c5-fc8b-4e0e-9e5b-eb64028f7ff4" width="80%"/>
+<img src="https://github.com/user-attachments/assets/dca8765d-109e-49c3-b8bb-b7aee8c48d9e" width="80%"/>
 </details>
 
 ---
@@ -105,8 +105,8 @@ Initial scan scored **100/100** — the worst possible rating.
 <details>
 <summary>📸 PingCastle Before Screenshots</summary>
 <br>
-<img src="screenshots/pingcastle-before-score.png" width="80%"/>
-<img src="screenshots/pingcastle-before-categories.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/2a684f5a-8cb2-477b-b635-824791362587" width="80%"/>
+<img src="https://github.com/user-attachments/assets/83f6350b-a052-4c18-9b1b-fd4828633d88" width="80%"/>
 </details>
 
 ---
@@ -120,8 +120,8 @@ Authenticated as `labadmin` via CrackMapExec and Impacket to enumerate the full 
 <details>
 <summary>📸 Enumeration Screenshots</summary>
 <br>
-<img src="screenshots/smb-enum-users.png" width="80%"/>
-<img src="screenshots/smb-enum-groups.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/a7f9d657-772e-4016-a55e-50e5655aa69d" width="80%"/>
+<img src="https://github.com/user-attachments/assets/0e636e48-2545-4bf8-accc-f3730617221d" width="80%"/>
 </details>
 
 ### Kerberoasting
@@ -138,9 +138,8 @@ This demonstrates that any authenticated domain user can request crackable servi
 <details>
 <summary>📸 Kerberoasting Screenshots</summary>
 <br>
-<img src="screenshots/kerberoastable-accounts.png" width="80%"/>
-<img src="screenshots/kerberoast-hashes.png" width="80%"/>
-<img src="screenshots/kerberoast-cracked.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/c009dc3a-388e-4b5b-a126-96f5c3bc3cc4" width="80%"/>
+<img src="https://github.com/user-attachments/assets/84c72d3f-a7d2-4c75-b698-c94e89f4cf73" width="80%"/>
 </details>
 
 ### AS-REP Roasting
@@ -156,7 +155,7 @@ impacket-GetNPUsers badblood.local/ -dc-ip <DC-IP> -usersfile users.txt -no-pass
 <details>
 <summary>📸 AS-REP Roasting Screenshots</summary>
 <br>
-<img src="screenshots/asrep-roast-results.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/5cd7556d-db8b-48fe-9c9a-3ae209641dd4" width="80%"/>
 </details>
 
 ### Critical Finding: Plaintext Password in AD Description
@@ -170,7 +169,7 @@ Any authenticated domain user can read description fields via LDAP by default. T
 <details>
 <summary>📸 Credential Discovery Screenshot</summary>
 <br>
-<img src="screenshots/rickey-moses-password.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/f7dd31bd-b225-456c-af9f-038f242a3450" width="80%"/>
 </details>
 
 ---
@@ -247,12 +246,12 @@ Removed 5 BadBlood accounts from Domain Admins, leaving only `labadmin`.
 <details>
 <summary>📸 Remediation Screenshots</summary>
 <br>
-<img src="screenshots/spn-remediation.png" width="80%"/>
-<img src="screenshots/asrep-remediation.png" width="80%"/>
-<img src="screenshots/description-remediation.png" width="80%"/>
-<img src="screenshots/domain-admin-reduction.png" width="80%"/>
-<img src="screenshots/password-policy-before.png" width="80%"/>
-<img src="screenshots/password-policy-after.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/02f3b356-0fc6-49ef-879c-ee9bb15901fc" width="80%"/>
+<img src="https://github.com/user-attachments/assets/d1f439bf-e808-4d7b-805a-91b24ba87e1a" width="80%"/>
+<img src="https://github.com/user-attachments/assets/fcf960a0-81f7-4b15-8320-a90efbd939ad" width="80%"/>
+<img src="https://github.com/user-attachments/assets/ac3e9b0a-b69f-4ab5-bf44-f121bc5f93a6" width="80%"/>
+<img src="https://github.com/user-attachments/assets/a532e567-87ff-4af4-9311-e6c9944bf890" width="80%"/>
+<img src="https://github.com/user-attachments/assets/031d415b-c6c3-4e4d-86bc-ffd3fb85ba99" width="80%"/>
 </details>
 
 ---
@@ -282,8 +281,8 @@ The Privileged Group category remains at 100 due to `P-ControlPathIndirectEveryo
 <details>
 <summary>📸 PingCastle After Screenshots</summary>
 <br>
-<img src="screenshots/pingcastle-after-score.png" width="80%"/>
-<img src="screenshots/pingcastle-after-categories.png" width="80%"/>
+<img src="https://github.com/user-attachments/assets/67a98624-2033-4073-82cc-1f57329f3698" width="80%"/>
+<img src="https://github.com/user-attachments/assets/99a87ae8-5520-4ef5-8627-281c0db2bfe9" width="80%"/>
 </details>
 
 ---
@@ -322,23 +321,6 @@ The Privileged Group category remains at 100 due to `P-ControlPathIndirectEveryo
 - The most critical finding (28 plaintext passwords in AD descriptions) was the simplest vulnerability and the easiest to fix. PingCastle didn't even detect it — manual enumeration during the attack phase revealed it. Automated tools don't catch everything.
 
 - Remediating individual vulnerabilities is straightforward. Fixing structural issues (nested group ACLs, indirect control paths) requires understanding the full privilege chain — tools like BloodHound exist specifically for this, and it's the difference between a quick fix and real security improvement.
-
----
-
-## Future Improvements
-
-- [ ] Deploy BloodHound on a domain-joined workstation to visualize and remediate the 3,968 indirect control paths
-- [ ] Implement fine-grained password policies (FGPP) for service accounts with 20+ character minimums
-- [ ] Enable Advanced Audit Policy and PowerShell Script Block Logging via GPO
-- [ ] Disable LLMNR and NetBIOS via GPO to close poisoning attack vectors
-- [ ] Enable Kerberos armoring (FAST) across the domain
-- [ ] Integrate Microsoft Sentinel for AD sign-in log monitoring (connects to Contoso project)
-
----
-
-## Cost
-
-Total Azure cost: **under $10** across the project. VM deallocated between sessions.
 
 ---
 
